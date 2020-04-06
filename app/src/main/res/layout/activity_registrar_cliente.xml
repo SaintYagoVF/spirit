@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".RegistrarClienteActivity">
+
+
+    <TextView
+        android:id="@+id/textVie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="REGISTRAR CLIENTE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="25dp">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:padding="10dip"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tablR22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="TIPO IDENTIFICACIÓN"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinTipoIdent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/tipoidentificacion_arrays"
+                        android:prompt="@string/tipoidentificacion_prompt" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="IDENTIFICACIÓN"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="NOMBRE LEGAL"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="RAZÓN SOCIAL"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT42"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="CORPORACIÓN"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinCorporacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="TIPO CLIENTE"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinTipoCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:entries="@array/tipocliente_arrays"
+                        android:prompt="@string/tipocliente_prompt" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="TIPO PROVEEDOR"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinTipoProveedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="CÓDIGO"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT82"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT91"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="CIUDAD"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinCiudad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="DIRECCIÓN"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT102"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablR11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="LATITUD"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/latitude_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="LONGITUD"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/longitude_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT131"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="EMAIL"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT132"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/simplT141"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text="DESCRIPCIÓN"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/simplT142"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dip"
+                        android:textAlignment="center"
+
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tablR12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRegCliCancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/button_onoff_indicator_on"
+                        android:clickable="true"
+                        android:text="CANCELAR" />
+
+                    <Button
+                        android:id="@+id/btnRegCliAceptar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/button_onoff_indicator_on"
+                        android:clickable="true"
+                        android:text="ACEPTAR" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

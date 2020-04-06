@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".DetalleRegistroClienteActivity">
+
+    <TextView
+        android:id="@+id/textViewTitl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="DETALLE REGISTRO CLIENTE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@color/fondo"
+        android:scrollbars="none">
+
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:isScrollContainer="true"
+                android:padding="10dip"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tabR22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="TIPO IDENTIFICACIÓN"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="IDENTIFICACIÓN"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="NOMBRE LEGAL"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="RAZÓN SOCIAL"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="ID CORPORACIÓN"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="ID TIPO CLIENTE"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="ID TIPO PROVEEDOR"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="CÓDIGO"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="ID CIUDAD"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT92"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="DIRECCIÓN"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="LATITUD"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT112"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT121"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="LONGITUD"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT122"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT131"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="EMAIL"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT132"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT141"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="DESCRIPCIÓN"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/simT151"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dip"
+                            android:text="VENDEDOR"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/simT152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:textAlignment="center"
+
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnSincRegCliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@android:color/holo_orange_dark"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="SINCRONIZAR CLIENTE" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnBorrarRegCliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@android:color/holo_orange_dark"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="BORRAR CLIENTE" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabR18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnCancelarRegCliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@android:color/holo_orange_dark"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="CANCELAR" />
+                    </LinearLayout>
+                </TableRow>
+
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

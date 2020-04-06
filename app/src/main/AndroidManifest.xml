@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.latinus.spirit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClienteActivity" />
+        <activity android:name=".CarritoActivity" />
+        <activity android:name=".StockActivity" />
+        <activity android:name=".PerfilActivity" />
+        <activity
+            android:name=".PedidoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CuentaActivity" />
+        <activity android:name=".DetalleClienteActivity" />
+        <activity android:name=".RegistrarClienteActivity" />
+        <activity android:name=".DetalleRegistroClienteActivity" />
+        <activity android:name=".RegistroPedidosActivity" />
+        <activity android:name=".DetallePedidoActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/section_label"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/imageButton"
+            android:ems="10"
+            android:hint="Corporacion"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton3"
+            android:layout_alignStart="@+id/imageButton3"
+            android:layout_alignLeft="@+id/imageButton3"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/ic_search_category_default" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/imageButton4"
+            android:layout_toLeftOf="@+id/imageButton4"
+            android:ems="10"
+            android:hint="Cliente"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:background="@android:drawable/ic_search_category_default" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:layout_toStartOf="@+id/imageButton"
+            android:layout_toLeftOf="@+id/imageButton"
+            android:ems="10"
+            android:hint="Oficina"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton4"
+            android:layout_alignStart="@+id/imageButton4"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:layout_marginTop="26dp"
+            android:background="@android:drawable/ic_search_category_default" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/section_label"
+        android:text="Identificación:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:text="Correo:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/section_label"
+        android:layout_toRightOf="@+id/section_label"
+        android:text="Telefono:"
+        android:textSize="18sp" />
+
+</LinearLayout>
